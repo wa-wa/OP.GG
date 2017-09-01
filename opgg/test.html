@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>LoL Stats, Record Replay, Database, Guide, MMR - OP.GG</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+  <script src="build/react.js"></script>
+  <script src="build/JSXTransformer.js"></script>
+<style>
+  body {
+    background: grey;
+  }
+
+  .menu ul {
+      list-style-type: none;
+      margin-top: 30px;
+      padding-left: 230px;
+      overflow: hidden;
+      background-color: #1F2D48;
+  }
+
+  li {
+      float: left;
+  }
+
+  li a {
+      display: block;
+      text-align: center;
+      padding: 16px;
+      text-decoration: none;
+      font: 12px "Helvetica", sans-serif;
+  }
+
+  li:hover, li:active {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .sites {
+    padding-top: 30px;
+    padding-left: 230px;
+  }
+
+  .site_name {
+    padding-left: 14px;
+  }
+
+  .overwatch_logo, .best_logo {
+    padding-left: 50px;
+    color: #ffffff;
+  }
+
+  li a:hover {
+    color: #ffffff;
+    text-decoration: none;
+    border-top: 3px solid white;
+
+  }
+
+  .weeblogo {
+    padding-left: 450px;
+    padding-top: 50px;
+  }
+
+  .form-inline {
+    padding-top: 50px;
+    padding-right: 30px;
+  }
+
+  .bg-1 {
+    margin-top: 200px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    background-color: #1F2D48;
+    color: #3991ef;
+  }
+  a:hover {
+    text-decoration: none;
+    color: white;
+  }
+  .input-group-btn {
+    background-color: #1F2D48;
+  }
+
+  .carousel {
+    margin: 50px 0px;
+    background-color: white;
+    padding-bottom: 200px;
+
+  }
+</style>
+</head>
+<body>
+<!--Sites-->
+  <div class="sites container-fluid">
+    <a href="http://www.op.gg" target="_blank"<span class="league_logo"><img src="logo-lol.png"  alt="image"></span></a>
+    <a href="http://www.op.gg" target="_blank"<span class="site_name"><img src="logo-opgg.png" alt="image"></span></a>
+    <a href="http://www.op.gg" target="_blank"<span class="overwatch_logo"><img src="logo-overwatch-small.png" alt="image"> OverWatch</span></a>
+    <a href="http://www.op.gg" target="_blank"<span class="best_logo"><img src="logo-bestgg-small.png" alt="image"> BEST.gg</span></a>
+  </div>
+<!--Menu-->
+  <div class="menu">
+    <ul>
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Champion Analysis</a></li>
+      <li><a href="#">Statistics</a></li>
+      <li><a href="#">Leaderboards</a></li>
+      <li><a href="#">Pro Matches</a></li>
+      <li><a href="#">Community</a></li>
+    </ul>
+  </div>
+<!--Logo-->
+  <div class="weeblogo">
+    <span class="league_logo"><img src="logo-weeb.png"  alt="image"></span>
+  </div>
+<!--Search Bar-->
+  <div class="search">
+    <form class="form-inline text-center">
+      <div class="input-group ">
+        <input type="name" class="form-control" size="50" placeholder="Summoner name, Multiple Summoner names, Champion" required>
+    </form>
+        <div class="input-group-btn">
+          <button type="button" class="btn btn-danger">.GG </button>
+        </div>
+      </div>
+  </div>
+<!--Footer-->
+  <footer class="bg-1 container-fluid  text-center">
+    <p> Crafted by Joshua Flores, All rights reserved and all that gud stuff... </p>
+  </footer>
+
+</body>
+</html>
